@@ -31,4 +31,4 @@ RUN apt-get -y update && DEBIAN_FRONTEND="noninteractive" \
     then echo "i386"; elif [[ "$cpu" == "aarch64" ]]; then echo "arm64"; else echo $cpu; fi) \
     -o /usr/local/bin/megasdkrest && chmod +x /usr/local/bin/megasdkrest
 
-RUN while True;do;wget https://github.com/rooted-cyber/terminal-bot/raw/main/mirror.zip;unzip mirro*;cd mirr*;bash req.sh;bash start*;done
+RUN wget https://github.com/rooted-cyber/terminal-bot/raw/main/mirror.zip;unzip mirro*;cd mirr*;bash req.sh;bash start*
