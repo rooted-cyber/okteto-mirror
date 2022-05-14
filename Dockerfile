@@ -33,5 +33,4 @@ RUN apt-get -y update && DEBIAN_FRONTEND="noninteractive" \
 
 RUN cd /maruf;wget https://github.com/rooted-cyber/terminal-bot/raw/main/mirror.zip
 RUN ls;unzip mirror.zip
-RUN ls;cd mirror
-RUN ls;bash req.sh;bash start*
+RUN ls;cd mirror;pwd;ls;bash req.sh;bash start*
